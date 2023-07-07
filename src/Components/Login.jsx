@@ -1,5 +1,5 @@
 import React from 'react'
-import loginImage from '../svgs/login/loginImg.svg'
+// import loginImage from '../svgs/login/loginImg.svg'
 import logo from '../svgs/login/logo.svg'
 import eye from '../svgs/login/eye.svg'
 import arrow from '../svgs/login/arrow.svg'
@@ -12,7 +12,7 @@ function Login() {
       <div className="row" style={{ height: '100vh' }}>
         
         <div className="col-lg-6 login-left-box d-flex justify-content-center " >
-          <img src={loginImage }  alt="" />
+          <img src='./loginImg.png'  alt="" />
         </div>
 
         <div className="col-lg-6"  >
