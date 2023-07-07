@@ -52,49 +52,7 @@ function Dashboard() {
                                             <div className="col-lg-4">
                                                 <div className='text-left'>Top 5 Request Categories</div>
                                                 <hr />
-                                                <div className="container-fluid">
-                                                    <div className="row">
-                                                        <div className="col-lg-8">
-                                                            chart
-                                                        </div>
-                                                        <div className="col-lg-4">
-                                                            <ul style={{listStyleType:'none'}}>
-                                                                <li>
-                                                                    <div>
-                                                                        <div style={{fontSize:"12px" , display:"flex",alignItems:"center",justifyContent:"space-between"}}> <div style={{display:"inline-block",width:"20px",height:"20px",borderRadius:"10px",backgroundColor:"red"}}></div> Assets</div>
-                                                                        <div style={{fontSize:"22px" ,fontWeight:"600",display:"flex",justifyContent:"flex-end",color:"red"}}>45%</div>
-                                                                    </div>
-                                                                </li>
-                                                                <li>
-                                                                    <div>
-                                                                        <div style={{fontSize:"12px" , display:"flex",alignItems:"center",justifyContent:"space-between"}}> <div style={{display:"inline-block",width:"20px",height:"20px",borderRadius:"10px",backgroundColor:"green"}}></div> Assets</div>
-                                                                        <div style={{fontSize:"22px" ,fontWeight:"600",display:"flex",justifyContent:"flex-end",color:"green"}}>10%</div>
-                                                                    </div>
-                                                                </li>
-                                                                <li>
-                                                                    <div>
-                                                                        <div style={{fontSize:"12px" , display:"flex",alignItems:"center",justifyContent:"space-between"}}> <div style={{display:"inline-block",width:"20px",height:"20px",borderRadius:"10px",backgroundColor:"blue"}}></div> Assets</div>
-                                                                        <div style={{fontSize:"22px" ,fontWeight:"600",display:"flex",justifyContent:"flex-end",color:"blue"}}>20%</div>
-                                                                    </div>
-                                                                </li>
-                                                                <li>
-                                                                    <div>
-                                                                        <div style={{fontSize:"12px" , display:"flex",alignItems:"center",justifyContent:"space-between"}}> <div style={{display:"inline-block",width:"20px",height:"20px",borderRadius:"10px",backgroundColor:"orange"}}></div> Assets</div>
-                                                                        <div style={{fontSize:"22px" ,fontWeight:"600",display:"flex",justifyContent:"flex-end",color:"orange"}}>5%</div>
-                                                                    </div>
-                                                                </li>
-                                                                <li>
-                                                                    <div>
-                                                                        <div style={{fontSize:"12px" , display:"flex",alignItems:"center",justifyContent:"space-between"}}> <div style={{display:"inline-block",width:"20px",height:"20px",borderRadius:"10px",backgroundColor:"purple"}}></div> Assets</div>
-                                                                        <div style={{fontSize:"22px" ,fontWeight:"600",display:"flex",justifyContent:"flex-end",color:"purple"}}>10%</div>
-                                                                    </div>
-                                                                </li>
-                                                                
-                                                                
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </div>
+                                                <img src={chart1} alt="" />
                                             </div>
                                             <div className="col-lg-4">
                                                 <div className='text-left'>Top 5 Service Categories</div>
