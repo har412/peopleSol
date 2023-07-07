@@ -1,0 +1,41 @@
+{
+  "files": {
+    "main.css": "/peopleSol/static/css/main.4b32f71f.css",
+    "main.js": "/peopleSol/static/js/main.ae1147fd.js",
+    "static/js/787.20673943.chunk.js": "/peopleSol/static/js/787.20673943.chunk.js",
+    "static/media/loginImg.svg": "/peopleSol/static/media/loginImg.45c2b95a63e6148804bca06e8d8266d9.svg",
+    "static/media/chart3.svg": "/peopleSol/static/media/chart3.44accf1466a0179d87f22b8986d8827b.svg",
+    "static/media/chart1.svg": "/peopleSol/static/media/chart1.ced26b3c0ac5fc377a92851506988fd7.svg",
+    "static/media/chart2.svg": "/peopleSol/static/media/chart2.87736267b0935b65136eb5c7728573f2.svg",
+    "static/media/rating1.svg": "/peopleSol/static/media/rating1.7381f6f00ec6d7384b5a44e73464443a.svg",
+    "static/media/rating2.svg": "/peopleSol/static/media/rating2.a8c3cf678e3cff7097ffd370f1f3967d.svg",
+    "static/media/chart4.svg": "/peopleSol/static/media/chart4.68bb13628dbe05237581da7f41a83ae1.svg",
+    "static/media/profilePic.svg": "/peopleSol/static/media/profilePic.0edbd8686547569930b40b90d50666f0.svg",
+    "static/media/logo.svg": "/peopleSol/static/media/logo.e0f5719e883d4e3390dda77af22d9757.svg",
+    "index.html": "/peopleSol/index.html",
+    "static/media/file.svg": "/peopleSol/static/media/file.b60e6b5fd7a42e81abbf81ec253daa78.svg",
+    "static/media/search.svg": "/peopleSol/static/media/search.ca474dad8385a0b9f034205ab6c5a3c7.svg",
+    "static/media/heart.svg": "/peopleSol/static/media/heart.d5937ef3be3abbc3552d1fe70f0fe52f.svg",
+    "static/media/user.svg": "/peopleSol/static/media/user.afae9d6cef52c60330c0337abfb29b8b.svg",
+    "static/media/eye.svg": "/peopleSol/static/media/eye.f8e3c25a457f51742a39bb00a52aafc6.svg",
+    "static/media/leftArrow.svg": "/peopleSol/static/media/leftArrow.56063ec7680b9d49b1228add7771d21d.svg",
+    "static/media/glowingStar.svg": "/peopleSol/static/media/glowingStar.1b0a26ebe6c082132fad7d4f3e10b621.svg",
+    "static/media/star.svg": "/peopleSol/static/media/star.75f234e207d0726b279bf6363b266c28.svg",
+    "static/media/box.svg": "/peopleSol/static/media/box.3600dd0ea3d492605e61fb75023fcf36.svg",
+    "static/media/download.svg": "/peopleSol/static/media/download.914ce800f32024b6bbea411f0b442b37.svg",
+    "static/media/arrow.svg": "/peopleSol/static/media/arrow.bc309fe86b5d43717935ec82807caea1.svg",
+    "static/media/updown.svg": "/peopleSol/static/media/updown.609bac630ee41596f2af22883b941218.svg",
+    "static/media/plus.svg": "/peopleSol/static/media/plus.5c246ae495727aa2f16c073c78c499bf.svg",
+    "static/media/filter.svg": "/peopleSol/static/media/filter.c3362a8ee901636dcd41eb1ed7c39c35.svg",
+    "static/media/rightarrow.svg": "/peopleSol/static/media/rightarrow.57e9cd5fdc4b683e9463f397644ea959.svg",
+    "static/media/leftarrow.svg": "/peopleSol/static/media/leftarrow.99fd3e7b1501b31aa32aca4b849fdbab.svg",
+    "static/media/verticalLine.svg": "/peopleSol/static/media/verticalLine.683c8a3bd7cdfdf97fdb65deb11e9b0b.svg",
+    "main.4b32f71f.css.map": "/peopleSol/static/css/main.4b32f71f.css.map",
+    "main.ae1147fd.js.map": "/peopleSol/static/js/main.ae1147fd.js.map",
+    "787.20673943.chunk.js.map": "/peopleSol/static/js/787.20673943.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4b32f71f.css",
+    "static/js/main.ae1147fd.js"
+  ]
+}
