@@ -2,37 +2,125 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*{
+  margin: 0px;
+  padding: 0px;
+  
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* login page  */
+
+.login-left-box{
+ background: #1296B0;
+}
+.login-left-box img{
+  width: 67%;
+  margin-bottom: 30px;
+}
+.logo{
+ width: 70%;
+ height: 70%;
+
+}
+.right-login-box{
+margin: 15% auto;
+}
+.form-c1{
+  border:2px solid #1296B0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.eye{
+  position: relative;
+  top:-35px;
+  left:130px;
+
+}
+.color-1296B0{
+  color: #1296B0;
+}
+.btn-primary,.btn-primary:focus, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+  background-color: #1296B0 !important;
+  border-color: #1296B0 !important;
+}
+.btn-info,.btn-info:focus, .btn-info:hover, .btn-info:active, .btn-info:visited {
+  background-color: #b7e5ee !important;
+  border-color: #d3e6e9 !important;
+  color: #1296B0;
+}
+.btn-success,.btn-success:focus, .btn-success:hover, .btn-success:active, .btn-success:visited {
+  background-color: #b7eec2 !important;
+  border-color: #d3e6e9 !important;
+  color: #12b02a;
+}
+.line{
+  width: 60%;
+  height: 1px;
+  background: #1296B0;
+  position: relative;
+  left:23%;
+}
+.forp{
+  position: relative;
+  top: -25px;
+}
+
+/************** dashboard *********/
+.bg-light {
+  background-color: #ffffff!important;
+}
+
+.vertical-line{
+  width: 2px;
+  height: 40px;
+  background-color:#E6E6E6 ;
+}
+
+.sidebar{
+  box-shadow: 0px 0px 9px -5px #0d5665;
+  border-radius: 10px;
+  padding: 0px !important;
+  overflow: hidden;
+}
+.list-item{
+ 
   display: flex;
-  flex-direction: column;
+  justify-content: left;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.vertical-nav-line{
+  width: 10px;
+  height: 30px;
+  background-color:#1296B0;
+  display: inline-block;
+}
+.active{
+  background: #E9F3F4;
+}
+.it-desk-btn{
+  border-bottom: 3px solid #1296B0;
+  color: #1295af;
+  background-color: white;
+}
+a{
+  color:#1296B0 !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.btn-custom{
+  background-color: white;
+  color: Red;
+  box-shadow: 0px 0px 10px -2px gray;
+}
+.modal-body input , .modal-body select , .modal-body textarea{
+  border: none;
+}
+.modal-body{
+  background-color: #eff5f7;
+}
+
+.hor-line{
+  width: 80px;
+  height: 4px;
+  background-color:#c0bdbd;
 }
