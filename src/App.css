@@ -124,3 +124,12 @@ a{
   height: 4px;
   background-color:#c0bdbd;
 }
+.insideCircle{
+width: 55px;
+    height: 55px;
+    border-radius: 27px;
+    background-color: #b7e5ee;
+    position: absolute;
+    top: 114px;
+    left: 69px;
+}

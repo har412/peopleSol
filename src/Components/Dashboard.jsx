@@ -1,14 +1,27 @@
 import React from 'react'
-import chart1 from '../svgs/Dashboard/chart1.svg'
-import chart2 from '../svgs/Dashboard/chart2.svg'
-import chart3 from '../svgs/Dashboard/chart3.svg'
-import chart4 from '../svgs/Dashboard/chart4.svg'
 import star from '../svgs/Dashboard/star.svg'
 import glowingStar from '../svgs/Dashboard/glowingStar.svg'
 import Navbar from './Navbar'
 import SideBar from './SideBar'
+import { Doughnut } from 'react-chartjs-2';
+import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js';
+ChartJS.register(ArcElement, Tooltip, Legend);
+
+
 
 function Dashboard() {
+
+    const data = {
+
+        datasets: [
+            {
+                label: "Request",
+                data: [300, 50, 100, 200, 50],
+                backgroundColor: ['#5BC4BF', '#F7941D', '#DA5DB6', '#77A2C7', '#0DB53C'],
+                hoverBackgroundColor: ['#5BC4BF', '#F7941D', '#DA5DB6', '#77A2C7', '#0DB53C'],
+            },
+        ],
+    };
     return (
         <>
             <Navbar />
@@ -44,23 +57,209 @@ function Dashboard() {
                                             <div className="col-lg-4">
                                                 <div className='text-left'>Top 5 Request Categories</div>
                                                 <hr />
-                                                <img src={chart1} alt="" />
-                                            </div>
-                                            <div className="col-lg-4">
-                                                <div className='text-left'>Top 5 Service Categories</div>
-                                                <hr />
-                                                <img src={chart2} alt="" />
-                                            </div>
-                                            <div className="col-lg-4">
-                                                <div className='text-left'>Top 5 Incident Categories</div>
-                                                <hr />
-                                                <img src={chart3} alt="" />
+                                                <div className="container-fluid">
+                                                    <div className="row">
+                                                        <div className="col-lg-8 d-flex" style={{ justifyContent: "center", alignItems: "center" }}>
+                                                            <Doughnut data={data} />
+                                                            {/* <div className='insideCircle'>
+                                                                <div><span style={{fontSize:"11px",fontWeight:"600"}}>Total</span></div>
+                                                                <div><span className='color-1296B0' style={{fontSize:"17px",fontWeight:"600"}}>93%</span></div>
+                                                        </div> */}
+                                                        </div>
+                                                        <div className="col-lg-4">
+                                                            <ul style={{ listStyleType: 'none' }}>
+                                                                <li>
+                                                                    <div>
+                                                                        <div style={{ fontSize: "12px", display: "flex", alignItems: "center", justifyContent: "space-between" }}> <div style={{ display: "inline-block", width: "14px", height: "14px", borderRadius: "7px", backgroundColor: "red" }}></div> Assets</div>
+                                                                        <div style={{ fontSize: "22px", fontWeight: "600", display: "flex", justifyContent: "flex-end", color: "red" }}>45%</div>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div>
+                                                                        <div style={{ fontSize: "12px", display: "flex", alignItems: "center", justifyContent: "space-between" }}> <div style={{ display: "inline-block", width: "14px", height: "14px", borderRadius: "7px", backgroundColor: "green" }}></div> Assets</div>
+                                                                        <div style={{ fontSize: "22px", fontWeight: "600", display: "flex", justifyContent: "flex-end", color: "green" }}>10%</div>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div>
+                                                                        <div style={{ fontSize: "12px", display: "flex", alignItems: "center", justifyContent: "space-between" }}> <div style={{ display: "inline-block", width: "14px", height: "14px", borderRadius: "7px", backgroundColor: "blue" }}></div> Assets</div>
+                                                                        <div style={{ fontSize: "22px", fontWeight: "600", display: "flex", justifyContent: "flex-end", color: "blue" }}>20%</div>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div>
+                                                                        <div style={{ fontSize: "12px", display: "flex", alignItems: "center", justifyContent: "space-between" }}> <div style={{ display: "inline-block", width: "14px", height: "14px", borderRadius: "7px", backgroundColor: "orange" }}></div> Assets</div>
+                                                                        <div style={{ fontSize: "22px", fontWeight: "600", display: "flex", justifyContent: "flex-end", color: "orange" }}>5%</div>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div>
+                                                                        <div style={{ fontSize: "12px", display: "flex", alignItems: "center", justifyContent: "space-between" }}> <div style={{ display: "inline-block", width: "14px", height: "14px", borderRadius: "7px", backgroundColor: "purple" }}></div> Assets</div>
+                                                                        <div style={{ fontSize: "22px", fontWeight: "600", display: "flex", justifyContent: "flex-end", color: "purple" }}>10%</div>
+                                                                    </div>
+                                                                </li>
+
+
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                             <div className="col-lg-4">
                                                 <div className='text-left'>Top 5 Request Categories</div>
                                                 <hr />
-                                                <img src={chart4} alt="" />
+                                                <div className="container-fluid">
+                                                    <div className="row">
+                                                        <div className="col-lg-8 d-flex" style={{ justifyContent: "center", alignItems: "center" }}>
+                                                            <Doughnut data={data} />
+                                                            {/* <div className='insideCircle'>
+                                                                <div><span style={{fontSize:"11px",fontWeight:"600"}}>Total</span></div>
+                                                                <div><span className='color-1296B0' style={{fontSize:"17px",fontWeight:"600"}}>93%</span></div>
+                                                        </div> */}
+                                                        </div>
+                                                        <div className="col-lg-4">
+                                                            <ul style={{ listStyleType: 'none' }}>
+                                                                <li>
+                                                                    <div>
+                                                                        <div style={{ fontSize: "12px", display: "flex", alignItems: "center", justifyContent: "space-between" }}> <div style={{ display: "inline-block", width: "14px", height: "14px", borderRadius: "7px", backgroundColor: "red" }}></div> Assets</div>
+                                                                        <div style={{ fontSize: "22px", fontWeight: "600", display: "flex", justifyContent: "flex-end", color: "red" }}>45%</div>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div>
+                                                                        <div style={{ fontSize: "12px", display: "flex", alignItems: "center", justifyContent: "space-between" }}> <div style={{ display: "inline-block", width: "14px", height: "14px", borderRadius: "7px", backgroundColor: "green" }}></div> Assets</div>
+                                                                        <div style={{ fontSize: "22px", fontWeight: "600", display: "flex", justifyContent: "flex-end", color: "green" }}>10%</div>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div>
+                                                                        <div style={{ fontSize: "12px", display: "flex", alignItems: "center", justifyContent: "space-between" }}> <div style={{ display: "inline-block", width: "14px", height: "14px", borderRadius: "7px", backgroundColor: "blue" }}></div> Assets</div>
+                                                                        <div style={{ fontSize: "22px", fontWeight: "600", display: "flex", justifyContent: "flex-end", color: "blue" }}>20%</div>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div>
+                                                                        <div style={{ fontSize: "12px", display: "flex", alignItems: "center", justifyContent: "space-between" }}> <div style={{ display: "inline-block", width: "14px", height: "14px", borderRadius: "7px", backgroundColor: "orange" }}></div> Assets</div>
+                                                                        <div style={{ fontSize: "22px", fontWeight: "600", display: "flex", justifyContent: "flex-end", color: "orange" }}>5%</div>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div>
+                                                                        <div style={{ fontSize: "12px", display: "flex", alignItems: "center", justifyContent: "space-between" }}> <div style={{ display: "inline-block", width: "14px", height: "14px", borderRadius: "7px", backgroundColor: "purple" }}></div> Assets</div>
+                                                                        <div style={{ fontSize: "22px", fontWeight: "600", display: "flex", justifyContent: "flex-end", color: "purple" }}>10%</div>
+                                                                    </div>
+                                                                </li>
+
+
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
+                                            <div className="col-lg-4">
+                                                <div className='text-left'>Top 5 Request Categories</div>
+                                                <hr />
+                                                <div className="container-fluid">
+                                                    <div className="row">
+                                                        <div className="col-lg-8 d-flex" style={{ justifyContent: "center", alignItems: "center" }}>
+                                                            <Doughnut data={data} />
+                                                            {/* <div className='insideCircle'>
+                                                                <div><span style={{fontSize:"11px",fontWeight:"600"}}>Total</span></div>
+                                                                <div><span className='color-1296B0' style={{fontSize:"17px",fontWeight:"600"}}>93%</span></div>
+                                                        </div> */}
+                                                        </div>
+                                                        <div className="col-lg-4">
+                                                            <ul style={{ listStyleType: 'none' }}>
+                                                                <li>
+                                                                    <div>
+                                                                        <div style={{ fontSize: "12px", display: "flex", alignItems: "center", justifyContent: "space-between" }}> <div style={{ display: "inline-block", width: "14px", height: "14px", borderRadius: "7px", backgroundColor: "red" }}></div> Assets</div>
+                                                                        <div style={{ fontSize: "22px", fontWeight: "600", display: "flex", justifyContent: "flex-end", color: "red" }}>45%</div>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div>
+                                                                        <div style={{ fontSize: "12px", display: "flex", alignItems: "center", justifyContent: "space-between" }}> <div style={{ display: "inline-block", width: "14px", height: "14px", borderRadius: "7px", backgroundColor: "green" }}></div> Assets</div>
+                                                                        <div style={{ fontSize: "22px", fontWeight: "600", display: "flex", justifyContent: "flex-end", color: "green" }}>10%</div>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div>
+                                                                        <div style={{ fontSize: "12px", display: "flex", alignItems: "center", justifyContent: "space-between" }}> <div style={{ display: "inline-block", width: "14px", height: "14px", borderRadius: "7px", backgroundColor: "blue" }}></div> Assets</div>
+                                                                        <div style={{ fontSize: "22px", fontWeight: "600", display: "flex", justifyContent: "flex-end", color: "blue" }}>20%</div>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div>
+                                                                        <div style={{ fontSize: "12px", display: "flex", alignItems: "center", justifyContent: "space-between" }}> <div style={{ display: "inline-block", width: "14px", height: "14px", borderRadius: "7px", backgroundColor: "orange" }}></div> Assets</div>
+                                                                        <div style={{ fontSize: "22px", fontWeight: "600", display: "flex", justifyContent: "flex-end", color: "orange" }}>5%</div>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div>
+                                                                        <div style={{ fontSize: "12px", display: "flex", alignItems: "center", justifyContent: "space-between" }}> <div style={{ display: "inline-block", width: "14px", height: "14px", borderRadius: "7px", backgroundColor: "purple" }}></div> Assets</div>
+                                                                        <div style={{ fontSize: "22px", fontWeight: "600", display: "flex", justifyContent: "flex-end", color: "purple" }}>10%</div>
+                                                                    </div>
+                                                                </li>
+
+
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div className="col-lg-4">
+                                                <div className='text-left'>Top 5 Request Categories</div>
+                                                <hr />
+                                                <div className="container-fluid">
+                                                    <div className="row">
+                                                        <div className="col-lg-8 d-flex" style={{ justifyContent: "center", alignItems: "center" }}>
+                                                            <Doughnut data={data} />
+                                                            {/* <div className='insideCircle'>
+                                                                <div><span style={{fontSize:"11px",fontWeight:"600"}}>Total</span></div>
+                                                                <div><span className='color-1296B0' style={{fontSize:"17px",fontWeight:"600"}}>93%</span></div>
+                                                        </div> */}
+                                                        </div>
+                                                        <div className="col-lg-4">
+                                                            <ul style={{ listStyleType: 'none' }}>
+                                                                <li>
+                                                                    <div>
+                                                                        <div style={{ fontSize: "12px", display: "flex", alignItems: "center", justifyContent: "space-between" }}> <div style={{ display: "inline-block", width: "14px", height: "14px", borderRadius: "7px", backgroundColor: "red" }}></div> Assets</div>
+                                                                        <div style={{ fontSize: "22px", fontWeight: "600", display: "flex", justifyContent: "flex-end", color: "red" }}>45%</div>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div>
+                                                                        <div style={{ fontSize: "12px", display: "flex", alignItems: "center", justifyContent: "space-between" }}> <div style={{ display: "inline-block", width: "14px", height: "14px", borderRadius: "7px", backgroundColor: "green" }}></div> Assets</div>
+                                                                        <div style={{ fontSize: "22px", fontWeight: "600", display: "flex", justifyContent: "flex-end", color: "green" }}>10%</div>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div>
+                                                                        <div style={{ fontSize: "12px", display: "flex", alignItems: "center", justifyContent: "space-between" }}> <div style={{ display: "inline-block", width: "14px", height: "14px", borderRadius: "7px", backgroundColor: "blue" }}></div> Assets</div>
+                                                                        <div style={{ fontSize: "22px", fontWeight: "600", display: "flex", justifyContent: "flex-end", color: "blue" }}>20%</div>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div>
+                                                                        <div style={{ fontSize: "12px", display: "flex", alignItems: "center", justifyContent: "space-between" }}> <div style={{ display: "inline-block", width: "14px", height: "14px", borderRadius: "7px", backgroundColor: "orange" }}></div> Assets</div>
+                                                                        <div style={{ fontSize: "22px", fontWeight: "600", display: "flex", justifyContent: "flex-end", color: "orange" }}>5%</div>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div>
+                                                                        <div style={{ fontSize: "12px", display: "flex", alignItems: "center", justifyContent: "space-between" }}> <div style={{ display: "inline-block", width: "14px", height: "14px", borderRadius: "7px", backgroundColor: "purple" }}></div> Assets</div>
+                                                                        <div style={{ fontSize: "22px", fontWeight: "600", display: "flex", justifyContent: "flex-end", color: "purple" }}>10%</div>
+                                                                    </div>
+                                                                </li>
+
+
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                         
+                                           
 
                                             <div className="col-lg-8">
                                                 <div className='text-left'>Overall Ratings</div>

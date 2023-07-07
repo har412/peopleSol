@@ -18,7 +18,7 @@ function List(props) {
     const [recordPerPage,setRecordPerPage] = useState(10);
     const [count,setCount] = useState(recordPerPage);
     
-
+    
     useEffect(()=>{
         let initialData = pageData.slice(0,recordPerPage)
         setPageaData(initialData)
